@@ -68,7 +68,7 @@ void EXT_INT0_SetCallback(void (*ptr)(void))
 }
 
 
-void interrupt(void)          
+void interrupt()
 {
     if (GET_BIT(INTCON, INTCON_INTF) == 1)
     {
